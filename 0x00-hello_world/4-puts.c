@@ -1,7 +1,6 @@
 #include <stdio.h>
 /*
- *int main - Entry point
- *Description: using the puts funtion to pint our program 
+ *int main - Entry poin 
  * Return: Always 0 (success)
  */
 int main(void)
