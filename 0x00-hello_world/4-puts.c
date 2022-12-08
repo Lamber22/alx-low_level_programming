@@ -1,7 +1,8 @@
 #include <stdio.h>
 /*
- *int main - Entry(void)
- * Return: Always 0
+ *int main - Entry point
+ *Description: using the puts funtion to pint our program 
+ * Return: Always 0 (success)
  */
 int main(void)
 {
