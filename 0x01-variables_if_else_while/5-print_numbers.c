@@ -14,7 +14,7 @@ int main(void)
 	for (base = 0; base <= 10; base++)
 	{
 		if (base != 10)
-			printf("%d\n", base);
+			printf("\n%d", base);
 	}
 	return (0);
 }
