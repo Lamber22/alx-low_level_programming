@@ -15,6 +15,7 @@ int main(void)
 	{
 		if (base != 10)
 			printf("%d", base);
+			printf("\n");
 	}
 	return (0);
 }
