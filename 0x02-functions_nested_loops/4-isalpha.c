@@ -2,16 +2,15 @@
 
 /**
  * _isalpha - checking for alphabetic character
- * @c: printing alphabetic characters
- * Return: 0 (Success)
+ * @c: character to be checked.
+ * Return: 1 for alphabetic character or 0 for anything else
  */
 
 int _isalpha(int c)
 {
-	for ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
-	{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
-	}
 	else
 		return (0);
+
 }
