@@ -2,8 +2,8 @@
 
 /**
  * print_sign - Determines whether an integer is positive, negative or zero.
- * @n: The number to print
- * Return: 1 if positive, 0 if zero, -1 if negative, / if not a digit.
+ * @n: number input
+ * Return: 1 prints '+' if n > 0, 0 prints '0' if n = 0, -1 prints '-' if n < 0
  */
 
 int print_sign(int n)
@@ -15,7 +15,6 @@ int print_sign(int n)
 	}
 	else if (n == 0)
 	{
-		_putchar('0');
 		_putchar('0');
 		return ('0');
 	}
