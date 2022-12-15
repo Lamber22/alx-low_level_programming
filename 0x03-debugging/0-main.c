@@ -10,7 +10,7 @@ int main(void)
 	int i;
 
 	i = 98;
-	printf("%d is positive\n", i);
+	positive_or_negative(i);
 
 	return (0);
 }
