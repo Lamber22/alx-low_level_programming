@@ -1,13 +1,12 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * print_times_table - a function to print the n times table
+ * print_times_table - entry point
  * @n: the time table
- * Return: Always 0 (Success)
+ * Return: nothing (Success)
  */
 
 void print_times_table(int n)
 {
-	return (0)
+	_putchar();
 }
