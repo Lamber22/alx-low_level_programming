@@ -7,17 +7,21 @@
  */
 int main(int n)
 {
-	unsigned int num = n;
-
-	if (n < 0)
-	{
-		putchar('-');
-		num = -num;
-	}
-
-	if ((num / 10) > 0)
-	main(num / 10);
-
-	putchar(num % 10 + '0');
+	print_number(9);
+	_putchar('\n');
+	print_number(-2);
+	_putchar('\n');
+	print_number(1024);
+	_putchar('\n');
+	print_number(0);
+	_putchar('\n');
+	print_number(-98);
+	_putchar('\n');
+	print_number(-2147483648);
+	_putchar('\n');
+	print_number(2147483647);
+	_putchar('\n');
+	print_number(-0);
+	_putchar('\n');
 	return (0);
 }
