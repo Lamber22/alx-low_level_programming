@@ -1,11 +1,11 @@
 #include <stdio.h>
-#include "main.h"
+
 /**
- * print_number - a function that print an integer
+ * main - a function that print an integer
  * @n: the number to print
- * Return:
+ * Return: 0
  */
-void print_number(int n)
+int main(int n)
 {
 	unsigned int num = n;
 
@@ -16,7 +16,8 @@ void print_number(int n)
 	}
 
 	if ((num / 10) > 0)
-	print_number(num / 10);
+	main(num / 10);
 
 	putchar(num % 10 + '0');
+	return (0);
 }
