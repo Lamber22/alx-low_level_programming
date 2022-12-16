@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
-  * print_square -  a function that prints n squares according n number of times
+  * print_square -  a function that prints n squares according
   * @size: The number of squares/number of times
-  *
   * Return:
   */
 void print_square(int size)
@@ -23,7 +21,6 @@ void print_square(int size)
 			{
 				putchar(35);
 			}
-
 			putchar('\n');
 		}
 	}
