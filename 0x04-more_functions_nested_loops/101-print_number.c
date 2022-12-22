@@ -5,20 +5,20 @@
  * @n: The integer to print
  * Return: Nothing!
  */
+
 void print_number(int n)
 {
-		unsigned int k = n;
+	unsigned int num = n;
 
-		if (n < 0)
-		{
-			n *= -1;
-			k = n;
-			putchar('-');
-		}
+	if (n < 0)
+	{
+		putchar('-');
+		num = -num;
+	}
 
-		k /= 10;
-		if (k != 0)
-			print_number(k);
+	if ((num / 10) > 0)
 
-		putchar((unsigned int) n % 10 + '0');
+		print_number(num / 10);
+
+	putchar((num % 10) + '0');
 }
