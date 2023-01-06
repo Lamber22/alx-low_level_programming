@@ -4,7 +4,7 @@
 /**
   *main - function
   *@argc: length of argv
-  *@argv: number of arguments
+  *@argv: number of argument
   *Return: Always 0
   */
 
