@@ -23,15 +23,15 @@ void print_all(const char * const format, ...)
 	{
 		if (format[i] == 'c')
 		{
-			printf("%c", va_arg(args, int));
+			printf("%c, ", va_arg(args, int));
 		}
 		else if (format[i] == 'i')
 		{
-			printf("%d", va_arg(args, int));
+			printf("%d, ", va_arg(args, int));
 		}
 		else if (format[i] == 'f')
 		{
-			printf("%f", va_arg(args, double));
+			printf("%f, ", va_arg(args, double));
 		}
 		else if (format[i] == 's')
 		{
