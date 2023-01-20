@@ -3,51 +3,50 @@
 #include <stdio.h>
 
 /**
- * print_all - Prints anything, followed by a new line.
- * @format: A string of characters representing the argument types.
- * @...: A variable number of arguments to be printed.
- *
- * Description: Any argument not of type char, int, float,
- *              or char * is ignored.
- *              If a string argument is NULL, (nil) is printed instead.
- */
+  * print_all - a function that prints anything
+  * @format: a list of types of arguments passed to the fucntion
+  * Return: nothing
+  */
 
 void print_all(const char * const format, ...)
 {
-	va_list args;
-	int i = 0;
+	va_list ptr;
+	unsigned int i = 0, j, c = 0;
+	char *str;
+	const char t_arg[] = "cisf";
 
-	va_start(args, format);
+	va_start(ptr, format);
 
-	while (format[i])
+	while (format && format[i])
 	{
-		if (format[i] == 'c')
+		j = 0;
+		while (t_arg[j])
 		{
-			printf("%c, ", va_arg(args, int));
-		}
-		else if (format[i] == 'i')
-		{
-			printf("%d, ", va_arg(args, int));
-		}
-		else if (format[i] == 'f')
-		{
-			printf("%f, ", va_arg(args, double));
-		}
-		else if (format[i] == 's')
-		{
-			char *str = va_arg(args, char *);
-
-			if (str == NULL)
+			if (format[j] == t_arg[j] && c)
 			{
-				printf("(nil)");
-			}
-			else
-			{
+				printf(", ");
+				break;
+			} j++;
+		}
+		switch (format[i])
+		{
+			case 'c':
+				printf("%c", va_arg(ptr, int)), c = 1;
+			case 'i':
+				printf("%d", va_arg(ptr, int)), c = 1;
+			case 'f':
+				printf("%f", va_arg(ptr, double)), c = 1;
+			case 's':
+				str = va_arg(ptr, char *), c = 1;
+				if (!str)
+				{
+					printf("(nil)");
+					break;
+				}
 				printf("%s", str);
-			}
-		}
-		i++;
+				break;
+		} i++;
 	}
-	va_end(args);
+	va_end(ptr);
 	printf("\n");
 }
