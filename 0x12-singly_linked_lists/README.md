@@ -1,1 +1,1 @@
-This is my singly_linked-list directory in C-programming
+This is my 0x12-singly_linked_lists directory
