@@ -5,14 +5,14 @@
   * unsigned unit.
   * @b: - a pointer to a string of 0 and 1 chars
   * Return: The converted number 0
-  *if - there is one or characters in the string b that is not 0 or 1.
+  *else - If b is NULL or contains chars not 0 or 1 - 0.
   */
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int result = 0, power = 1;
 	int len;
 
-	if (b == NULL)
+	if (b == '\0')
 		return (0);
 
 	for (len = 0; b[len];)
